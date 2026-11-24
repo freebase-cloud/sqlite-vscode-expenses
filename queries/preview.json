@@ -1,0 +1,38 @@
+[
+  {
+    "phase": "create",
+    "query": "CREATE TABLE fbx_sqlite_000000000000000000000000 (id INTEGER PRIMARY KEY, category TEXT, amount REAL)"
+  },
+  {
+    "phase": "seed",
+    "query": "INSERT INTO fbx_sqlite_000000000000000000000000 (id, category, amount) VALUES (1, 'Travel', 140)"
+  },
+  {
+    "phase": "seed",
+    "query": "INSERT INTO fbx_sqlite_000000000000000000000000 (id, category, amount) VALUES (2, 'Office', 15)"
+  },
+  {
+    "phase": "seed",
+    "query": "INSERT INTO fbx_sqlite_000000000000000000000000 (id, category, amount) VALUES (3, 'Hosting', 90)"
+  },
+  {
+    "phase": "read",
+    "query": "SELECT * FROM fbx_sqlite_000000000000000000000000 LIMIT 100"
+  },
+  {
+    "phase": "update",
+    "query": "UPDATE fbx_sqlite_000000000000000000000000 SET amount = 150 WHERE id = 1"
+  },
+  {
+    "phase": "verify",
+    "query": "SELECT * FROM fbx_sqlite_000000000000000000000000 WHERE id = 1 LIMIT 100"
+  },
+  {
+    "phase": "delete",
+    "query": "DELETE FROM fbx_sqlite_000000000000000000000000 WHERE id = 2"
+  },
+  {
+    "phase": "cleanup",
+    "query": "DROP TABLE fbx_sqlite_000000000000000000000000"
+  }
+]

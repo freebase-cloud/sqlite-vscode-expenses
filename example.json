@@ -1,0 +1,7 @@
+{
+  "name": "sqlite-vscode-expenses",
+  "engine": "sqlite",
+  "slug": "sqlite",
+  "kind": "application",
+  "useCase": "expenses"
+}

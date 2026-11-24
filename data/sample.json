@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "category": "Travel",
+    "amount": 140
+  },
+  {
+    "id": 2,
+    "category": "Office",
+    "amount": 15
+  },
+  {
+    "id": 3,
+    "category": "Hosting",
+    "amount": 90
+  }
+]
